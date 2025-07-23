@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Notification System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Notification Section -->
+        <section class="dashboard-section" id="notificationSection">
+            <h2>1. Notification Trigger</h2>
+            <button id="notifyButton" class="btn">Simulate Notification</button>
+            <button id="clearNotifications" class="btn btn-danger">Clear Notifications</button>
+            
+            <div class="stats">
+                <div class="stat-box">
+                    <div class="stat-value" id="notificationCount">0</div>
+                    <div class="stat-label">Total Notifications</div>
+                </div>
+            </div>
+            
+            <div id="notificationArea">
+                <div class="notification notification-empty">No notifications yet</div>
+            </div>
+        </section>
+        
+        <!-- Search Section -->
+        <section class="dashboard-section" id="searchSection">
+            <h2>2. Debounced Search Field</h2>
+            <input type="text" id="searchInput" placeholder="Type to search...">
+            <div id="searchResults"></div>
+        </section>
+        
+        <!-- Scroll Section -->
+        <section class="dashboard-section" id="scrollSection">
+            <h2>3. Scroll Position Logger</h2>
+            <p>Scroll the page and check console for throttled position updates (max 1 per second)</p>
+            <div class="stats">
+                <div class="stat-box">
+                    <div class="stat-value" id="scrollPosition">0</div>
+                    <div class="stat-label">Current Scroll Position (px)</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Async Error Section -->
+        <section class="dashboard-section" id="asyncSection">
+            <h2>4. Async Error Handling</h2>
+            <button id="fetchDataButton" class="btn">Fetch Data (50% Error Chance)</button>
+            <div id="errorDisplay"></div>
+        </section>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
