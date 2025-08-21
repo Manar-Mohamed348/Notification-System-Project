@@ -7,7 +7,7 @@ A interactive showcase project demonstrating modern JavaScript concepts includin
 
 ## 🚀 Live Demo
 
-[View Live Project]() 
+[View Live Project](https://manar-mohamed348.github.io/Notification-System-Project/) 
 
 ## 📋 Features
 
